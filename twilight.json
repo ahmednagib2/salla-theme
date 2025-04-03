@@ -27,6 +27,7 @@
   "version": "1.0.0",
   "description": "ثيم مخصص لمتاجر سلة",
   "repository": "https://github.com/ahmednagib2/salla-theme",
+  "support_url": "https://github.com/ahmednagib2/salla-theme/issues",
   "author": {
     "name": "Ahmed Nagib",
     "email": "ahmednagib300@gmail.com",
