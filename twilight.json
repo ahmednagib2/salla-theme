@@ -32,7 +32,10 @@
     "ar": "ثيم مخصص"
   },
   "version": "1.0.0",
-  "description": "ثيم مخصص لمتاجر سلة",
+  "description": {
+    "en": "Custom theme for Salla stores",
+    "ar": "ثيم مخصص لمتاجر سلة"
+  },
   "repository": "https://github.com/ahmednagib2/salla-theme",
   "support_url": "https://github.com/ahmednagib2/salla-theme/issues",
   "author_email": "ahmednagib300@gmail.com",
