@@ -1,22 +1,26 @@
 {
-  "components": {
-    "header": {
+  "components": [
+    {
+      "name": "header",
       "main": true,
       "slots": ["menu", "cart", "user"]
     },
-    "footer": {
+    {
+      "name": "footer",
       "main": true,
       "slots": ["links", "social", "copyright"]
     },
-    "home": {
+    {
+      "name": "home",
       "main": true,
       "slots": ["slider", "featured-products", "categories"]
     },
-    "product": {
+    {
+      "name": "product",
       "main": true,
       "slots": ["gallery", "details", "related"]
     }
-  },
+  ],
   "features": [
     "RTL",
     "Responsive",
