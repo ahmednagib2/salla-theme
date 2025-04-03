@@ -1,4 +1,10 @@
 {
+  "features": [
+    "RTL",
+    "Responsive",
+    "Multi-language",
+    "Dark Mode"
+  ],
   "name": "MyCustomTheme",
   "version": "1.0.0",
   "description": "ثيم مخصص لمتاجر سلة",
