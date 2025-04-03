@@ -1,4 +1,22 @@
 {
+  "components": {
+    "header": {
+      "main": true,
+      "slots": ["menu", "cart", "user"]
+    },
+    "footer": {
+      "main": true,
+      "slots": ["links", "social", "copyright"]
+    },
+    "home": {
+      "main": true,
+      "slots": ["slider", "featured-products", "categories"]
+    },
+    "product": {
+      "main": true,
+      "slots": ["gallery", "details", "related"]
+    }
+  },
   "features": [
     "RTL",
     "Responsive",
