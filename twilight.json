@@ -48,22 +48,33 @@
     "email": "ahmednagib300@gmail.com"
   },
   "category": "general",
-  "settings": {
-    "colors": {
-      "primary": {
-        "label": "اللون الرئيسي",
-        "value": "#3869ff"
+  "settings": [
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": {
+        "en": "Primary Color",
+        "ar": "اللون الرئيسي"
       },
-      "secondary": {
-        "label": "اللون الثانوي",
-        "value": "#2ec5d3"
-      }
+      "value": "#3869ff"
     },
-    "fonts": {
-      "main_font": {
-        "label": "الخط الرئيسي",
-        "value": "Cairo"
-      }
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": {
+        "en": "Secondary Color",
+        "ar": "اللون الثانوي"
+      },
+      "value": "#2ec5d3"
+    },
+    {
+      "type": "font",
+      "id": "main_font",
+      "label": {
+        "en": "Main Font",
+        "ar": "الخط الرئيسي"
+      },
+      "value": "Cairo"
     }
-  }
+  ]
 }
