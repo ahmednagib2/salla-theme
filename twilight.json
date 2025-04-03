@@ -2,13 +2,14 @@
   "name": "MyCustomTheme",
   "version": "1.0.0",
   "description": "ثيم مخصص لمتاجر سلة",
+  "repository": "https://github.com/ahmednagib2/salla-theme",
   "author": {
-    "name": "Your Name",
-    "email": "support@example.com",
-    "website": "https://example.com"
+    "name": "Ahmed Nagib",
+    "email": "ahmednagib300@gmail.com",
+    "website": "https://github.com/ahmednagib2"
   },
   "theme_support": {
-    "email": "support@example.com"
+    "email": "ahmednagib300@gmail.com"
   },
   "category": "general",
   "settings": {
