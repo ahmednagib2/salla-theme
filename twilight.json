@@ -27,7 +27,10 @@
     "Multi-language",
     "Dark Mode"
   ],
-  "name": "MyCustomTheme",
+  "name": {
+    "en": "MyCustomTheme",
+    "ar": "ثيم مخصص"
+  },
   "version": "1.0.0",
   "description": "ثيم مخصص لمتاجر سلة",
   "repository": "https://github.com/ahmednagib2/salla-theme",
