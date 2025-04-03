@@ -1,0 +1,32 @@
+{
+  "name": "MyCustomTheme",
+  "version": "1.0.0",
+  "description": "ثيم مخصص لمتاجر سلة",
+  "author": {
+    "name": "Your Name",
+    "email": "support@example.com",
+    "website": "https://example.com"
+  },
+  "theme_support": {
+    "email": "support@example.com"
+  },
+  "category": "general",
+  "settings": {
+    "colors": {
+      "primary": {
+        "label": "اللون الرئيسي",
+        "value": "#3869ff"
+      },
+      "secondary": {
+        "label": "اللون الثانوي",
+        "value": "#2ec5d3"
+      }
+    },
+    "fonts": {
+      "main_font": {
+        "label": "الخط الرئيسي",
+        "value": "Cairo"
+      }
+    }
+  }
+}
