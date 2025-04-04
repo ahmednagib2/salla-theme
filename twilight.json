@@ -20,12 +20,48 @@
         "email": "ahmednagib300@gmail.com"
     },
     "category": "general",
+    "type": "theme",
+    "engine": "twilight",
+    "scripts": [
+        "js/app.js"
+    ],
+    "styles": [
+        "css/app.css"
+    ],
+    "dependencies": {
+        "@salla.sa/twilight": "^2.0.0",
+        "@salla.sa/twilight-components": "^2.0.0",
+        "@salla.sa/twilight-tailwind": "^2.0.0"
+    },
     "features": [
         "RTL",
         "Responsive",
         "Multi-language",
-        "Dark Mode"
+        "Dark Mode",
+        "component-youtube",
+        "component-fixed-banner",
+        "component-testimonials",
+        "component-parallax-background",
+        "component-photos-slider",
+        "component-store-features",
+        "component-square-photos",
+        "component-fixed-products",
+        "component-products-slider",
+        "component-featured-products-1",
+        "component-featured-products-2",
+        "component-featured-products-3",
+        "component-latest-products",
+        "component-vertical-menu-slider",
+        "filters"
     ],
+    "require": {
+        "salla/twilight": "^2.0"
+    },
+    "hooks": {
+        "beforeMount": [
+            "Salla\\NLJS\\Http"
+        ]
+    },
     "components": [
         {
             "name": "header",
@@ -62,18 +98,78 @@
                 "details",
                 "related"
             ]
+        },
+        {
+            "name": "brands",
+            "title": "العلامات التجارية",
+            "icon": "sicon-store",
+            "path": "home.brands"
+        },
+        {
+            "name": "enhanced-square",
+            "title": "صور مربعة محسنة",
+            "icon": "sicon-image-square",
+            "path": "home.enhanced-square"
+        },
+        {
+            "name": "main-links",
+            "title": "الروابط الرئيسية",
+            "icon": "sicon-link",
+            "path": "home.main-links"
+        },
+        {
+            "name": "enhanced-slider",
+            "title": "سلايدر محسن",
+            "icon": "sicon-image-carousel",
+            "path": "home.enhanced-slider"
+        },
+        {
+            "name": "slider-products-header",
+            "title": "منتجات مع ترويسة",
+            "icon": "sicon-categories-grid",
+            "path": "home.slider-products-header"
         }
     ],
     "views_path": "src/views",
     "assets_path": "src/assets",
-    "settings": [
+    "groups": [
         {
-            "type": "text",
-            "id": "[object_object]_copy",
-            "label": "[object Object] copy",
-            "value": "مرحباً بك في متجرنا",
-            "description": "000"
+            "id": "header",
+            "icon": "sicon-add_row_before",
+            "type": "header",
+            "label": {
+                "ar": "الرأس",
+                "en": "Header"
+            }
         },
+        {
+            "id": "home",
+            "icon": "sicon-home",
+            "type": "page",
+            "label": {
+                "ar": "الصفحة الرئيسية",
+                "en": "Home Page"
+            }
+        },
+        {
+            "id": "footer",
+            "icon": "sicon-add_row_after",
+            "type": "footer",
+            "label": {
+                "ar": "التذييل",
+                "en": "Footer"
+            }
+        }
+    ],
+    "provide": [
+        "Salla\\NLJS\\Http"
+    ],
+    "theme": {
+        "primary": "#0c6460",
+        "primary_dark": "#0a4f4c",
+        "primary_light": "#0e7975"
+    },
+    "settings": [
         {
             "type": "text",
             "id": "home_title",
@@ -81,7 +177,9 @@
                 "ar": "عنوان الصفحة الرئيسية",
                 "en": "Home Page Title"
             },
-            "value": "مرحباً بك في متجرنا"
+            "value": "مرحباً بك في متجرنا",
+            "required": false,
+            "groups": ["home"]
         },
         {
             "type": "textarea",
@@ -90,7 +188,9 @@
                 "ar": "وصف الصفحة الرئيسية",
                 "en": "Home Page Description"
             },
-            "value": "اكتشف تشكيلتنا الواسعة من المنتجات المميزة"
+            "value": "اكتشف تشكيلتنا الواسعة من المنتجات المميزة",
+            "required": false,
+            "groups": ["home"]
         },
         {
             "type": "image",
@@ -99,7 +199,9 @@
                 "ar": "صورة البانر الرئيسي",
                 "en": "Main Banner Image"
             },
-            "value": null
+            "value": "",
+            "required": false,
+            "groups": ["home"]
         },
         {
             "type": "repeater",
@@ -109,6 +211,7 @@
                 "en": "Slider Slides"
             },
             "value": [],
+            "groups": ["home"],
             "fields": [
                 {
                     "type": "image",
@@ -153,31 +256,16 @@
             ]
         },
         {
-            "type": "color",
-            "id": "primary_color",
+            "type": "number",
+            "id": "header_logo_height",
             "label": {
-                "en": "Primary Color",
-                "ar": "اللون الرئيسي"
+                "ar": "طول شعار المتجر",
+                "en": "Store Logo Height"
             },
-            "value": "#3869ff"
-        },
-        {
-            "type": "color",
-            "id": "secondary_color",
-            "label": {
-                "en": "Secondary Color",
-                "ar": "اللون الثانوي"
-            },
-            "value": "#2ec5d3"
-        },
-        {
-            "type": "font",
-            "id": "main_font",
-            "label": {
-                "en": "Main Font",
-                "ar": "الخط الرئيسي"
-            },
-            "value": "Cairo"
+            "value": 60,
+            "format": "integer",
+            "required": false,
+            "groups": ["header"]
         }
     ]
 }
