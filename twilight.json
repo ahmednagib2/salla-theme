@@ -52,6 +52,84 @@
   "assets_path": "src/assets",
   "settings": [
     {
+      "type": "text",
+      "id": "home_title",
+      "label": {
+        "ar": "عنوان الصفحة الرئيسية",
+        "en": "Home Page Title"
+      },
+      "value": "مرحباً بك في متجرنا"
+    },
+    {
+      "type": "textarea",
+      "id": "home_description",
+      "label": {
+        "ar": "وصف الصفحة الرئيسية",
+        "en": "Home Page Description"
+      },
+      "value": "اكتشف تشكيلتنا الواسعة من المنتجات المميزة"
+    },
+    {
+      "type": "image",
+      "id": "home_banner",
+      "label": {
+        "ar": "صورة البانر الرئيسي",
+        "en": "Main Banner Image"
+      },
+      "value": ""
+    },
+    {
+      "type": "repeater",
+      "id": "home_slides",
+      "label": {
+        "ar": "شرائح العرض",
+        "en": "Slider Slides"
+      },
+      "value": [],
+      "fields": [
+        {
+          "type": "image",
+          "id": "image",
+          "label": {
+            "ar": "الصورة",
+            "en": "Image"
+          }
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": {
+            "ar": "العنوان",
+            "en": "Title"
+          }
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": {
+            "ar": "العنوان الفرعي",
+            "en": "Subtitle"
+          }
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": {
+            "ar": "نص الزر",
+            "en": "Button Text"
+          }
+        },
+        {
+          "type": "text",
+          "id": "button_link",
+          "label": {
+            "ar": "رابط الزر",
+            "en": "Button Link"
+          }
+        }
+      ]
+    },
+    {
       "type": "color",
       "id": "primary_color",
       "label": {
