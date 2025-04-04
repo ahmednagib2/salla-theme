@@ -1,160 +1,183 @@
 {
-  "id": "custom-theme",
-  "name": {
-    "en": "MyCustomTheme",
-    "ar": "ثيم مخصص"
-  },
-  "version": "1.0.0",
-  "description": {
-    "en": "Custom theme for Salla stores",
-    "ar": "ثيم مخصص لمتاجر سلة"
-  },
-  "repository": "https://github.com/ahmednagib2/salla-theme",
-  "support_url": "https://github.com/ahmednagib2/salla-theme/issues",
-  "author": {
-    "name": "Ahmed Nagib",
-    "email": "ahmednagib300@gmail.com",
-    "website": "https://github.com/ahmednagib2"
-  },
-  "theme_support": {
-    "email": "ahmednagib300@gmail.com"
-  },
-  "category": "general",
-  "features": [
-    "RTL",
-    "Responsive",
-    "Multi-language",
-    "Dark Mode"
-  ],
-  "components": [
-    {
-      "name": "header",
-      "main": true,
-      "slots": ["menu", "cart", "user"]
+    "id": "custom-theme",
+    "name": {
+        "en": "MyCustomTheme",
+        "ar": "ثيم مخصص"
     },
-    {
-      "name": "footer",
-      "main": true,
-      "slots": ["links", "social", "copyright"]
+    "version": "1.0.0",
+    "description": {
+        "en": "Custom theme for Salla stores",
+        "ar": "ثيم مخصص لمتاجر سلة"
     },
-    {
-      "name": "home",
-      "main": true,
-      "slots": ["slider", "featured-products", "categories"]
+    "repository": "https://github.com/ahmednagib2/salla-theme",
+    "support_url": "https://github.com/ahmednagib2/salla-theme/issues",
+    "author": {
+        "name": "Ahmed Nagib",
+        "email": "ahmednagib300@gmail.com",
+        "website": "https://github.com/ahmednagib2"
     },
-    {
-      "name": "product",
-      "main": true,
-      "slots": ["gallery", "details", "related"]
-    }
-  ],
-  "views_path": "src/views",
-  "assets_path": "src/assets",
-  "settings": [
-    {
-      "type": "text",
-      "id": "home_title",
-      "label": {
-        "ar": "عنوان الصفحة الرئيسية",
-        "en": "Home Page Title"
-      },
-      "value": "مرحباً بك في متجرنا"
+    "theme_support": {
+        "email": "ahmednagib300@gmail.com"
     },
-    {
-      "type": "textarea",
-      "id": "home_description",
-      "label": {
-        "ar": "وصف الصفحة الرئيسية",
-        "en": "Home Page Description"
-      },
-      "value": "اكتشف تشكيلتنا الواسعة من المنتجات المميزة"
-    },
-    {
-      "type": "image",
-      "id": "home_banner",
-      "label": {
-        "ar": "صورة البانر الرئيسي",
-        "en": "Main Banner Image"
-      },
-      "value": ""
-    },
-    {
-      "type": "repeater",
-      "id": "home_slides",
-      "label": {
-        "ar": "شرائح العرض",
-        "en": "Slider Slides"
-      },
-      "value": [],
-      "fields": [
+    "category": "general",
+    "features": [
+        "RTL",
+        "Responsive",
+        "Multi-language",
+        "Dark Mode"
+    ],
+    "components": [
         {
-          "type": "image",
-          "id": "image",
-          "label": {
-            "ar": "الصورة",
-            "en": "Image"
-          }
+            "name": "header",
+            "main": true,
+            "slots": [
+                "menu",
+                "cart",
+                "user"
+            ]
         },
         {
-          "type": "text",
-          "id": "title",
-          "label": {
-            "ar": "العنوان",
-            "en": "Title"
-          }
+            "name": "footer",
+            "main": true,
+            "slots": [
+                "links",
+                "social",
+                "copyright"
+            ]
         },
         {
-          "type": "text",
-          "id": "subtitle",
-          "label": {
-            "ar": "العنوان الفرعي",
-            "en": "Subtitle"
-          }
+            "name": "home",
+            "main": true,
+            "slots": [
+                "slider",
+                "featured-products",
+                "categories"
+            ]
         },
         {
-          "type": "text",
-          "id": "button_text",
-          "label": {
-            "ar": "نص الزر",
-            "en": "Button Text"
-          }
-        },
-        {
-          "type": "text",
-          "id": "button_link",
-          "label": {
-            "ar": "رابط الزر",
-            "en": "Button Link"
-          }
+            "name": "product",
+            "main": true,
+            "slots": [
+                "gallery",
+                "details",
+                "related"
+            ]
         }
-      ]
-    },
-    {
-      "type": "color",
-      "id": "primary_color",
-      "label": {
-        "en": "Primary Color",
-        "ar": "اللون الرئيسي"
-      },
-      "value": "#3869ff"
-    },
-    {
-      "type": "color",
-      "id": "secondary_color",
-      "label": {
-        "en": "Secondary Color",
-        "ar": "اللون الثانوي"
-      },
-      "value": "#2ec5d3"
-    },
-    {
-      "type": "font",
-      "id": "main_font",
-      "label": {
-        "en": "Main Font",
-        "ar": "الخط الرئيسي"
-      },
-      "value": "Cairo"
-    }
-  ]
+    ],
+    "views_path": "src/views",
+    "assets_path": "src/assets",
+    "settings": [
+        {
+            "type": "text",
+            "id": "[object_object]_copy",
+            "label": "[object Object] copy",
+            "value": "مرحباً بك في متجرنا",
+            "description": "000"
+        },
+        {
+            "type": "text",
+            "id": "home_title",
+            "label": {
+                "ar": "عنوان الصفحة الرئيسية",
+                "en": "Home Page Title"
+            },
+            "value": "مرحباً بك في متجرنا"
+        },
+        {
+            "type": "textarea",
+            "id": "home_description",
+            "label": {
+                "ar": "وصف الصفحة الرئيسية",
+                "en": "Home Page Description"
+            },
+            "value": "اكتشف تشكيلتنا الواسعة من المنتجات المميزة"
+        },
+        {
+            "type": "image",
+            "id": "home_banner",
+            "label": {
+                "ar": "صورة البانر الرئيسي",
+                "en": "Main Banner Image"
+            },
+            "value": null
+        },
+        {
+            "type": "repeater",
+            "id": "home_slides",
+            "label": {
+                "ar": "شرائح العرض",
+                "en": "Slider Slides"
+            },
+            "value": [],
+            "fields": [
+                {
+                    "type": "image",
+                    "id": "image",
+                    "label": {
+                        "ar": "الصورة",
+                        "en": "Image"
+                    }
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": {
+                        "ar": "العنوان",
+                        "en": "Title"
+                    }
+                },
+                {
+                    "type": "text",
+                    "id": "subtitle",
+                    "label": {
+                        "ar": "العنوان الفرعي",
+                        "en": "Subtitle"
+                    }
+                },
+                {
+                    "type": "text",
+                    "id": "button_text",
+                    "label": {
+                        "ar": "نص الزر",
+                        "en": "Button Text"
+                    }
+                },
+                {
+                    "type": "text",
+                    "id": "button_link",
+                    "label": {
+                        "ar": "رابط الزر",
+                        "en": "Button Link"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "color",
+            "id": "primary_color",
+            "label": {
+                "en": "Primary Color",
+                "ar": "اللون الرئيسي"
+            },
+            "value": "#3869ff"
+        },
+        {
+            "type": "color",
+            "id": "secondary_color",
+            "label": {
+                "en": "Secondary Color",
+                "ar": "اللون الثانوي"
+            },
+            "value": "#2ec5d3"
+        },
+        {
+            "type": "font",
+            "id": "main_font",
+            "label": {
+                "en": "Main Font",
+                "ar": "الخط الرئيسي"
+            },
+            "value": "Cairo"
+        }
+    ]
 }
