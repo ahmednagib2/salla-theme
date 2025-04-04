@@ -1,4 +1,31 @@
 {
+  "id": "custom-theme",
+  "name": {
+    "en": "MyCustomTheme",
+    "ar": "ثيم مخصص"
+  },
+  "version": "1.0.0",
+  "description": {
+    "en": "Custom theme for Salla stores",
+    "ar": "ثيم مخصص لمتاجر سلة"
+  },
+  "repository": "https://github.com/ahmednagib2/salla-theme",
+  "support_url": "https://github.com/ahmednagib2/salla-theme/issues",
+  "author": {
+    "name": "Ahmed Nagib",
+    "email": "ahmednagib300@gmail.com",
+    "website": "https://github.com/ahmednagib2"
+  },
+  "theme_support": {
+    "email": "ahmednagib300@gmail.com"
+  },
+  "category": "general",
+  "features": [
+    "RTL",
+    "Responsive",
+    "Multi-language",
+    "Dark Mode"
+  ],
   "components": [
     {
       "name": "header",
@@ -21,33 +48,8 @@
       "slots": ["gallery", "details", "related"]
     }
   ],
-  "features": [
-    "RTL",
-    "Responsive",
-    "Multi-language",
-    "Dark Mode"
-  ],
-  "name": {
-    "en": "MyCustomTheme",
-    "ar": "ثيم مخصص"
-  },
-  "version": "1.0.0",
-  "description": {
-    "en": "Custom theme for Salla stores",
-    "ar": "ثيم مخصص لمتاجر سلة"
-  },
-  "repository": "https://github.com/ahmednagib2/salla-theme",
-  "support_url": "https://github.com/ahmednagib2/salla-theme/issues",
-  "author_email": "ahmednagib300@gmail.com",
-  "author": {
-    "name": "Ahmed Nagib",
-    "email": "ahmednagib300@gmail.com",
-    "website": "https://github.com/ahmednagib2"
-  },
-  "theme_support": {
-    "email": "ahmednagib300@gmail.com"
-  },
-  "category": "general",
+  "views_path": "src/views",
+  "assets_path": "src/assets",
   "settings": [
     {
       "type": "color",
